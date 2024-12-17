@@ -1,0 +1,18 @@
+(defcfg
+  process-unmapped-keys yes
+)
+
+(defsrc
+  caps
+  rmeta
+)
+
+(defalias
+  esc-ctrl (tap-hold 100 100 esc lctrl)
+  tmux-prefix C-b
+)
+
+(deflayer base
+  @esc-ctrl
+  @tmux-prefix
+)
